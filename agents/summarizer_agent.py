@@ -21,5 +21,3 @@ sumarizer_agent = AssistantAgent(
         ),
     model_client=client
 )
-
-sumarizer_agent_tool = AgentTool(sumarizer_agent,return_value_as_last_message=True)

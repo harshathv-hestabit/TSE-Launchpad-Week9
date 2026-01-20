@@ -21,5 +21,3 @@ research_agent = AssistantAgent(
         ),
     model_client=client
 )
-
-research_agent_tool = AgentTool(research_agent,return_value_as_last_message=True)

@@ -2,3 +2,4 @@ models
 sample.py
 .env
 AI
+__pycache__

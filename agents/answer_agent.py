@@ -21,5 +21,3 @@ answer_agent = AssistantAgent(
         ),
     model_client=client    
 )
-
-answer_agent_tool = AgentTool(answer_agent,return_value_as_last_message=True)
