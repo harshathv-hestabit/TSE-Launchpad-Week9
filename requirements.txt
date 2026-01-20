@@ -1,0 +1,8 @@
+autogen-agentchat
+autogen-core
+autogen-ext
+asyncio
+autogen-ext[llama-cpp]
+huggingface_hub
+dotenv
+autogen-ext[openai]
