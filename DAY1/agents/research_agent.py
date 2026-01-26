@@ -1,14 +1,16 @@
 from autogen_agentchat.agents import AssistantAgent
-from autogen_agentchat.tools import AgentTool
 from autogen_ext.models.llama_cpp import LlamaCppChatCompletionClient
+from autogen_ext.models.ollama import OllamaChatCompletionClient
 
-client=LlamaCppChatCompletionClient(
-    model_path="models/Meta-Llama-3-8B-Instruct.Q4_0.gguf",
-    n_ctx=8192,
-    max_tokens=128,
-    temperature=0.4,
-    verbose=False
-)
+client = OllamaChatCompletionClient(model="qwen3:0.6b",options={"temperature":0.3})
+
+# client=LlamaCppChatCompletionClient(
+#     model_path="models/Meta-Llama-3-8B-Instruct.Q4_0.gguf",
+#     n_ctx=8192,
+#     max_tokens=128,
+#     temperature=0.4,
+#     verbose=False
+# )
 
 research_agent = AssistantAgent(
     name="Research_Agent",

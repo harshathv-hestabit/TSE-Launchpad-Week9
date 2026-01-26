@@ -7,9 +7,9 @@ from autogen_agentchat.messages import TextMessage
 from autogen_core import CancellationToken
 from pydantic import BaseModel, ValidationError, field_validator
 
-from agents.worker_agent import WorkerAgent
-from agents.reflector_agent import ReflectorAgent
-from agents.validator import ValidatorAgent
+from DAY2.agents.worker_agent import WorkerAgent
+from DAY2.agents.reflector_agent import ReflectorAgent
+from DAY2.agents.validator import ValidatorAgent
 
 def extract_json_object(text: str) -> str:
     start = text.find("{")
@@ -28,14 +28,10 @@ def extract_json_object(text: str) -> str:
     raise ValueError("Unbalanced JSON braces")
 
 planner_msg = """
-"You are a planning agent.\n\n"
-        "Your ONLY job is to output a JSON object describing a task DAG."
+"You are a planner.\n\n"
+        "Your ONLY job is to output a JSON object describing a task DAG by breaking down user query into subtasks."
         "STRICT RULES:\n"
         "- Output ONLY valid JSON\n"
-        "- Do NOT include explanations\n"
-        "- Do NOT include markdown\n"
-        "- Do NOT include backticks\n"
-        "- Do NOT include natural language\n\n"
         "JSON SCHEMA:\n"
         "{\n"
         '  "nodes": [\n'
@@ -56,7 +52,7 @@ planner_msg = """
         "nodes": []
         }
         
-        Expection Output: JSON OBJECT
+        Expected Output: JSON OBJECT
 """
 
 class DAGNode(BaseModel):
@@ -106,6 +102,8 @@ class Planner:
             cancellation
         )
         output = response.chat_message.content
+        print(response)
+        print()
         print(output)
 
         try:
