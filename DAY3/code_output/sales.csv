@@ -1,0 +1,16 @@
+order_id,order_date,region,product,category,units_sold,unit_price,revenue,sales_rep
+1001,2025-01-05,North,Laptop Pro,Electronics,3,1200,3600,Alice
+1002,2025-01-06,South,Wireless Mouse,Accessories,15,25,375,Bob
+1003,2025-01-06,East,Office Chair,Furniture,4,180,720,Charlie
+1004,2025-01-07,West,Laptop Air,Electronics,2,950,1900,Alice
+1005,2025-01-07,North,Mechanical Keyboard,Accessories,8,85,680,Bob
+1006,2025-01-08,South,Desk Lamp,Furniture,10,40,400,Charlie
+1007,2025-01-08,East,Laptop Pro,Electronics,1,1200,1200,Alice
+1008,2025-01-09,West,Monitor 27in,Electronics,5,300,1500,Bob
+1009,2025-01-09,North,Office Chair,Furniture,6,180,1080,Charlie
+1010,2025-01-10,South,Wireless Mouse,Accessories,20,25,500,Alice
+1011,2025-01-10,East,Mechanical Keyboard,Accessories,7,85,595,Bob
+1012,2025-01-11,West,Laptop Air,Electronics,3,950,2850,Charlie
+1013,2025-01-11,North,Monitor 27in,Electronics,4,300,1200,Alice
+1014,2025-01-12,South,Desk Lamp,Furniture,12,40,480,Bob
+1015,2025-01-12,East,Laptop Pro,Electronics,2,1200,2400,Charlie
