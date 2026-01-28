@@ -70,10 +70,10 @@ STRICT RULES (MANDATORY):
    - output_key
 
 2. DO NOT include any other fields.
-   ❌ No "id"
-   ❌ No "params"
-   ❌ No "name"
-   ❌ No metadata of any kind
+   - No "id"
+   - No "params"
+   - No "name"
+   - No metadata of any kind
 
 3. "task" MUST be a natural-language instruction for the agent.
    - DO NOT include executable code

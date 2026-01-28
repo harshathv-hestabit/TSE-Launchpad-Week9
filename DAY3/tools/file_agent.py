@@ -1,7 +1,5 @@
 from autogen_ext.agents.file_surfer import FileSurfer
 from autogen_ext.models.ollama import OllamaChatCompletionClient
-from autogen_core.tools import FunctionTool
-from autogen_agentchat.messages import TextMessage
 from autogen_agentchat.agents import AssistantAgent
 import os
 from autogen_ext.models.openai import OpenAIChatCompletionClient
